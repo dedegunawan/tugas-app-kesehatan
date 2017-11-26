@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="assets/plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="assets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Preloader Css -->
+    <link href="assets/plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="assets/plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="assets/css/themes/all-themes.css" rel="stylesheet" />
+    <style>
+    .menuku:hover {
+      cursor: pointer;
+    }
+    </style>
+</head>
+
+<body class="theme-red" onload="firstLoader()">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="md-preloader pl-size-md">
+                <svg viewbox="0 0 75 75">
+                    <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
+                </svg>
+            </div>
+            <p>Tunggu Sebentar...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand menuku" href="index.html">MARI HIDUP SEHAT</a>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MENU UTAMA</li>
+                    <li>
+                        <a href="home" class="menuku">
+                            <i class="material-icons">home</i>
+                            <span><b>Beranda</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="macam-macam" class="menuku">
+                            <i class="material-icons">layers</i>
+                            <span>Macam-macam Penyakit &amp; Penyembuhannya</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tanya-dokter" class="menuku">
+                            <i class="material-icons">text_fields</i>
+                            <span>Tanya Dokter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resep-sehat" class="menuku">
+                            <i class="material-icons">widgets</i>
+                            <span>Resep Makanan Sehat</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2017 <a href="https://cioray.id">CiorayID</a>.
+                </div>
+                <div class="version">
+                    <b>Version: </b> 0.0.1
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid" id="contentElement">
+            <!-- MENU HOME -->
+            <div id="home" class="menu-utama hidden">
+              <div class="block-header">
+                  <h2>PILIH MENU</h2>
+              </div>
+
+              <!-- Widgets -->
+              <div class="row clearfix">
+                  <div class="col-xs-12">
+                      <div class="info-box bg-green hover-expand-effect menuku"  href="macam-macam">
+                          <div class="icon">
+                              <i class="material-icons">layers</i>
+                          </div>
+                          <div class="content ">
+                              <div class="text">MACAM-MACAM PENYAKIT</div>
+                              <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12">
+                      <div class="info-box bg-green hover-expand-effect menuku"  href="tanya-dokter">
+                          <div class="icon">
+                              <i class="material-icons">text_fields</i>
+                          </div>
+                          <div class="content ">
+                              <div class="text">TANYA DOKTER</div>
+                              <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12">
+                      <div class="info-box bg-green hover-expand-effect menuku"  href="resep-sehat">
+                          <div class="icon">
+                              <i class="material-icons">widgets</i>
+                          </div>
+                          <div class="content ">
+                              <div class="text">RESEP MAKANAN SEHAT</div>
+                              <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <!-- #END# Widgets -->
+            </div>
+            <!-- END MENU HOME -->
+
+            <!-- MENU MACAM-MACAM -->
+            <div id="macam-macam" class="menu-utama hidden">
+              <div class="block-header">
+                  <h2>MACAM MACAM PENYAKIT</h2>
+              </div>
+
+              <!-- Widgets -->
+              <div class="row clearfix">
+                  <div class="col-xs-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+
+
+                                <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                    <div class="panel-group" id="accordion_2" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-success">
+                                            <div class="panel-heading" role="tab" id="headingOne_2">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion_2" href="#collapseOne_2" aria-expanded="false" aria-controls="collapseOne_2" class="collapsed">
+                                                        MENU 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne_2" aria-expanded="false" style="height: 0px;">
+                                                <div class="panel-body">
+                                                    MENU 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-success">
+                                            <div class="panel-heading" role="tab" id="headingTwo_2">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_2" href="#collapseTwo_2" aria-expanded="false" aria-controls="collapseTwo_2">
+                                                        MENU 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo_2" aria-expanded="false">
+                                                <div class="panel-body">
+                                                    MENU 2
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-success">
+                                            <div class="panel-heading" role="tab" id="headingThree_2">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_2" href="#collapseThree_2" aria-expanded="false" aria-controls="collapseThree_2">
+                                                        MENU 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree_2" aria-expanded="false">
+                                                <div class="panel-body">
+                                                    MENU 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                      <button type="button" class="btn btn-default btn-xs waves-effect menuku" href="home"><i class="material-icons">arrow_back</i> <span class="text">KEMBALI KE HOME</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- #END# Widgets -->
+            </div>
+            <!-- END MENU MACAM-MACAM -->
+
+            <!-- MENU TANYA-DOKTER -->
+            <div id="tanya-dokter" class="menu-utama hidden">
+              <div class="block-header">
+                  <h2>TANYA DOKTER</h2>
+              </div>
+
+              <!-- Widgets -->
+              <div class="row clearfix">
+                  <div class="col-xs-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+
+
+                                <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                    <div class="card">
+                                        <div class="body">
+                                            Mohon maaf halaman masih dalam tahap pengembangan.
+                                        </div>
+
+                                    </div>
+
+                                    <div class="">
+                                      <button type="button" class="btn btn-default btn-xs waves-effect menuku" href="home"><i class="material-icons">arrow_back</i> <span class="text">KEMBALI KE HOME</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- #END# Widgets -->
+            </div>
+            <!-- END MENU TANYA-DOKTER -->
+
+            <!-- MENU RESEP-SEHAT -->
+            <div id="resep-sehat" class="menu-utama hidden">
+              <div class="block-header">
+                  <h2>RESEP SEHAT</h2>
+              </div>
+
+              <!-- Widgets -->
+              <div class="row clearfix">
+                  <div class="col-xs-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+
+
+                                <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                    <div class="card">
+                                        <div class="body">
+                                            Mohon maaf halaman masih dalam tahap pengembangan.
+                                        </div>
+
+                                    </div>
+
+                                    <div class="">
+                                      <button type="button" class="btn btn-default btn-xs waves-effect menuku" href="home"><i class="material-icons">arrow_back</i> <span class="text">KEMBALI KE HOME</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- #END# Widgets -->
+            </div>
+            <!-- END MENU RESEP-SEHAT -->
+
+            <!-- MENU NOT-FOUND -->
+            <div id="not-found" class="menu-utama hidden">
+              <div class="block-header">
+                  <h2>NOT FOUND</h2>
+              </div>
+
+              <!-- Widgets -->
+              <div class="row clearfix">
+                  <div class="col-xs-12">
+                    <div class="card">
+                        <div class="body bg-red">
+                            Mohon Maaf Halaman tidak ditemukan.
+                        </div>
+
+                    </div>
+                  </div>
+              </div>
+              <!-- #END# Widgets -->
+            </div>
+            <!-- END MENU NOT-FOUND -->
+
+
+        </div>
+    </section>
+
+    <!-- AXIOS -->
+    <script src="cordova.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-resource.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="assets/plugins/node-waves/waves.js"></script>
+
+    <!-- Custom Js -->
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="assets/js/demo.js"></script>
+    <script>
+    var contentElement = $("#contentElement");
+    var menuStorageName = "menu_123_456";
+    var registeredMenu = [
+      'home', 'macam-macam', 'tanya-dokter', 'resep-sehat'
+    ];
+
+    </script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
